@@ -23,7 +23,7 @@ body, ul, li, ol, h1, h2, h3, h4, h5, h6, input, a, span, p {
    font-family: "iconfonts";
 }
 .iconss:before{
-    content: "\e623"; 
+    content: "\e623";
 }
 
 .icon {
@@ -755,6 +755,10 @@ body, ul, li, ol, h1, h2, h3, h4, h5, h6, input, a, span, p {
   width: 100px;
   height: 100px;
   cursor: pointer;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+  transform:rotateZ(180deg);
 }
 
 .banner .btn .btn-right {
@@ -762,6 +766,9 @@ body, ul, li, ol, h1, h2, h3, h4, h5, h6, input, a, span, p {
   float: right;
   width: 100px;
   height: 100px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
 }
 
 .banner .anniu {
