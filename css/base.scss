@@ -1,0 +1,87 @@
+*{
+position: relative;
+list-style: none;
+text-decoration: none;
+}
+/* body{
+	font-family: '微软雅黑';
+	font-size:15px;
+} */
+@mixin zuoyou{
+	position: absolute;
+	left: 0;
+	right:0;
+	margin: auto;
+}
+@mixin shangxia{
+	position: absolute;
+	bottom: 0;
+	top:0;
+	margin: auto;
+}
+@mixin XXXX{
+	width: ;
+	height: ;
+	background:rgb(117,241,168);
+}
+.clear{
+	content:'';
+	display: block;
+	clear: both;
+	line-height: 0;
+	height: 0;
+}
+.clearfix::after{
+	@extend %clear;
+}
+$mediu-size : 1068px;
+$small-size : 768px;
+@mixin onm{
+	@media screen and (max-width: $media-size){
+		@content;
+	}
+}
+@include one {
+	width: 100px;
+}
+.row{
+	&::after{
+		@extend %clear;
+	}
+}
+.col{
+	float: left;
+}
+@for $i from 1 through $number{
+	.col.m#{$i}{
+		width: percentage($i/$number);
+	}
+}
+font-face {
+	font-family: 'wodeziti';
+	src:url('');
+} 
+font-face {
+	font-family: 'blod';
+	src:url('');
+} 
+font-face {
+	font-family: 'wodeziti';
+	src:url('');
+} 
+font-face {
+	font-family: 'wodeziti';
+	src:url('');
+}
+.test1{
+	font-family: 'blod';
+} 
+.test2{
+	font-family: 'blod';
+} 
+.test3{
+	font-family: 'blod';
+} 
+.test4{
+	font-family: 'blod';
+} 
